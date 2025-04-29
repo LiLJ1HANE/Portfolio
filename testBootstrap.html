@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de JIHANE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        section {
+            padding: 100px 0;
+        }
+        .hero {
+            padding-top: 150px;
+        }
+        .skill-card .bi {
+            font-size: 2rem;
+        }
+        .navbar {
+            background-color: white !important;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolio de JIHANE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acceuil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="acceuil" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Bonjour, je suis <span class="text-danger">JIHANE EL HAMDAOUI</span></h1>
+                    <p class="lead mb-4 fw-bold text-muted">Élève ingénieur spécialisée en Informatique<br>(École nationale des sciences appliquées, Tétouan)</p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-danger btn-lg px-4">Me contacter</a>
+                        <a href="#projets" class="btn btn-outline-secondary btn-lg px-4">Voir mes projets pro</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="moi.jpeg" alt="Photo de profil" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Mes compétences</h2>
+            </div>
+            <div class="row g-4">
+                <!-- compet1 -->
+                <div class="col-md-4">
+                    <div class="skill-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-code-square" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title">Développement Web</h4>
+                            <p class="card-text text-muted">HTML, CSS, JavaScript, Bootstrap, etc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- compet2 -->
+                <div class="col-md-4">
+                    <div class="skill-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-code-slash" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title">Programmation en C</h4>
+                            <p class="card-text text-muted">Développement d'applications en langage C</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- compet3 -->
+                <div class="col-md-4">
+                    <div class="skill-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-inline-block mb-3">
+                                <i class="bi bi-filetype-java" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title">Programmation en JAVA</h4>
+                            <p class="card-text text-muted">Développement d'applications Java</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Mes Projets</h2>
+                <p class="text-muted">Quelques-unes de mes réalisations :</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <img src="téléchargement.jpeg" class="card-img-top" alt="Projet E_Hotel" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Site E_Hotel</h5>
+                            <p class="card-text text-muted">Création d'une plateforme de gestion d'hôtel avec Laravel et Angular</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Avril 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <img src="jeu.webp" class="card-img-top" alt="Projet Jeu Java" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projet_lo3ba_java</h5>
+                            <p class="card-text text-muted">Création d'un jeu vidéo de tir</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Avril 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card card border-0 shadow-sm h-100">
+                        <img src="geolocalisation.jpg" class="card-img-top" alt="Système de géolocalisation" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Système de géolocalisation</h5>
+                            <p class="card-text text-muted">Modélisation UML d'un système de géolocalisation en temps réel</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Mai 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contactez-moi</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Sujet</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-danger px-4 py-2">Envoyer le message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-danger text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2025 Portfolio de JIHANE EL HAMDAOUI.</p>
+            <div class="mt-3">
+                <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
